@@ -1,3 +1,30 @@
-body{
+.header{
 	background-color: #5b7989;
+	width: 100vw;
+	height:auto;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+h1{
+	color: white;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+nav p{
+	color:white;
+	display: inline-block;
+	padding: 1em;
+	text-align: center;
+}
+
+.titulo{
+width: 70vw;
+display: inline-block;
+}
+
+.menu{
+	width: 30vw;
+	display: inline-block;
+	float: right;
 }
