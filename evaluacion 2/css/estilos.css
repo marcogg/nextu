@@ -1,17 +1,24 @@
+@font-face{
+font-family: DancingScript-Regular;
+src: url('https://fonts.googleapis.com/css?family=Dancing+Script');
+}
+
 .header{
 	background-color: #5b7989;
 	width: 100vw;
 	height:auto;
 	padding: 1em;
-	border-radius: 10px;
+	border-radius: 10px 10px 0 0;
 }
 
 h1{
+	font-family: 'Dancing Script', cursive;
 	color: white;
 	text-shadow: 2px 2px 2px #02010a;
 }
 
 nav p{
+	font-family: 'Dancing Script', cursive;
 	color:white;
 	display: inline-block;
 	padding: 1em;
@@ -27,4 +34,33 @@ display: inline-block;
 	width: 30vw;
 	display: inline-block;
 	float: right;
+}
+
+.img-central{
+	width: 100%;
+	background-color:#82c3a6;
+}
+
+.img-secundaria{
+	background-color:  #d5c75f;
+	width: 100%
+	margin: auto;
+	display: inline-flex;
+	border-radius: 1px;
+	;
+}
+.col2{
+	display: inline-block;
+	width: 50vw;
+	margin: auto;
+}
+.img-2col{
+	width: 50%;
+	height: auto;
+	padding:5%;
+	display: block;
+	margin: auto;
+}
+.img-izq:hover{
+
 }
