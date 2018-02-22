@@ -196,3 +196,39 @@ display: inline-block;
 	margin: auto;
 	text-align: center;
 }
+
+
+/*---------------------------PAGINA PAISAJES-----------------------*/
+.galeria-paisajes{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #d5c75f;
+}
+
+@media only screen and (max-width: 900px){
+	.galeria-paisajes{
+		display: flex;
+		flex-flow: column wrap;
+	}
+}
+
+.col3{
+	padding: 5%;
+	margin: auto;
+}
+
+.blur{
+	-webkit-filter: blur(10px);
+	filter:blur(10px);
+}
+
+.greyscale{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.sepia{
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+}
