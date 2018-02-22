@@ -12,6 +12,20 @@ body{
 }
 }
 
+body{
+	-webkit-animation-name:bounce;
+	-webkit-animation-duration:1s;
+	animation-name: bounce;
+	animation-duration: 1s;
+}
+
+/*Animacion página--------------*/
+@-webkit-keyframes bounce{
+	0% {margin-top: 150%;}
+	60%{ margin-top:-5%;}
+	100%{margin-top:0%;}
+	}
+
 .container{
 	margin: auto;
 }
@@ -36,6 +50,25 @@ body{
 	margin: auto;
 	border-radius: 10px 10px 0 0;
 }
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color:#f1f1f1 ;
+}
+
+a:hover {
+    color: #f1f1f1;
+}
+
+a:active {
+    color: #f1f1f1;
+}
+.activo{
+	text-decoration: underline;
 }
 
 h1{
