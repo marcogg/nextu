@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act 2</title>
+</head>
+<body>
+
+<p id="n1"></p>
+
+</body>
+
+<script>
+	var numero =100;
+
+	Number.prototype.metodoSuma = function(){
+		return this+10;
+	};
+
+	document.getElementById("n1").innerHTML=numero.metodoSuma();
+</script>
+
+</html>
