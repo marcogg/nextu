@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numbers</title>
+</head>
+<body>
+	<h1>Numbers</h1>
+<p id="n1"></p>
+<p id="n2"></p>
+
+<h1>Number Properties</h1>
+<p id="n3"></p>
+<p id="n4"></p>
+<p id="n5"></p>
+<p id="n6"></p>
+<p id="n7"></p>
+<p id="n8"></p>
+<p id="n9"></p>
+
+<h1>Number Metodos</h1>
+<p id="n10"></p>
+<p id="n11"></p>
+<p id="n12"></p>
+<p id="n13"></p>
+<p id="n14"></p>
+
+</body>
+
+	<script>
+	//Defincion nombres
+var numero1=2500;
+var numero2= 34.290;
+
+document.getElementById("n1").innerHTML=numero1;
+document.getElementById("n2").innerHTML=numero2;
+
+//Propiedades de number.
+var numero3=23434;
+document.getElementById("n3").innerHTML = numero3.constructor; //Retorna la funcion nativa quie crea un numero
+document.getElementById("n4").innerHTML = Number.MAX_VALUE; //Retorna el valor máximo que se puede usar
+document.getElementById("n5").innerHTML = Number.MIN_VALUE;
+document.getElementById("n6").innerHTML = Number.NEGATIVE_INFINITY;
+document.getElementById("n7").innerHTML = Number.NaN; //devuelve un umero no definido (Not a Number)
+document.getElementById("n8").innerHTML = Number.POSITIVE_INFINITY;
+
+Number.prototype.metodoNumerico = function(){
+	return this*4/2;
+};
+
+var numero4=25;
+document.getElementById("n9").innerHTML=numero4.metodoNumerico();
+
+//Metodos de number
+var numero5=26.57;
+document.getElementById("n10").innerHTML=numero5.toExponential(); //convierte a expresion exponencial
+
+var numero6= 14.78945612;
+document.getElementById("n11").innerHTML=numero6.toFixed(3); //Trunca numero y lo hace un string
+
+var numero7=23.5567;
+document.getElementById("n12").innerHTML=numero7.toPrecision(2);
+
+var numero8=5000;
+document.getElementById("n14").innerHTML= numero8.valueOf();
+
+
+
+	</script>
+
+</html>
