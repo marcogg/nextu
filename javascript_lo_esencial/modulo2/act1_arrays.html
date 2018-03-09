@@ -1,1 +1,37 @@
-act1_arrays.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act 1 Arrays</title>
+</head>
+<body>
+	<p id="a1"></p>
+	<p id="a2"></p>
+	<p id="a3"></p>
+	<p id="a4"></p>
+	<p id="a5"></p>
+	<p id="a6"></p>
+	<p id="a7"></p>
+</body>
+
+<script type="text/javascript">
+	
+	var arrayanimales=["Zorro", "Oso", "Gorila"];
+	var arrayautos=new Array("Mazda", "Nissan", "Chevrolet");
+	var arraytelefonos=["Nokia", "Sony", "Samsung"];
+	var arrayequipos= new Array("Liverpool", "Juventus", "América");
+	var arrayfutbolistas=new Array("Messi", "Ronaldo", "Robben");
+	var arraymeses=["Enero", "Febrero", "Marzo"];
+
+	arraymeses[arraymeses.length]="Abril";
+
+	document.getElementById("a1").innerHTML=arrayanimales;
+	document.getElementById("a2").innerHTML=arrayautos;
+	document.getElementById("a3").innerHTML=arraytelefonos;
+	document.getElementById("a4").innerHTML=arrayequipos;
+	document.getElementById("a5").innerHTML=arrayfutbolistas;
+	document.getElementById("a6").innerHTML=arraymeses;
+	document.getElementById("a7").innerHTML=arraymeses;
+
+
+</script>
+</html>
