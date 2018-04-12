@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conditionals</title>
+</head>
+<body>
+	<h1>Act 2</h1>
+	<p id="num"></p>
+	<button onclick="evaluar()">Evaluar el número</button>
+
+</body>
+
+	<script type="text/javascript">
+		var numero =16;
+
+		function evaluar () {
+			if (numero % 2 == 0) {
+				document.getElementById("num").innerHTML="El número es par";
+			}
+
+			else {
+				document.getElementById("num").innerHTML="El número es impar"
+			}
+		}
+	</script>
+
+</html>

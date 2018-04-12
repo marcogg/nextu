@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act 3</title>
+</head>
+<body>
+
+	<h1>Act 3</h1>
+	<p id="nota"></p>
+
+	<button onclick="grado()">Evaluar grado</button>
+
+</body>
+	<script type="text/javascript">
+		
+		var nota=6.0;
+
+		function grado () {
+			if (nota<3.0 && nota>4.9) {
+				document.getElementById("nota").innerHTML="Su nota es de nivel medio";
+			}
+			else if(nota> 4.0 && nota<5.0) {
+				document.getElementById("nota").innerHTML="Su nota es de nivel alto";
+			}
+			
+			else {
+				document.getElementById("nota").innerHTML="SU nota es de nivel bajo";
+			}
+}
+
+	</script>
+
+</html>
