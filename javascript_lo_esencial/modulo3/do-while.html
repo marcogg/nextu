@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DO WHILE</title>
+</head>
+<body>
+	<h1>Do WHIlE</h1>
+	<p>La diferencia con While radica en que DO WHILE forza a la a ejecución del ciclo al menos 1 vez.</p>
+
+	<p id="salida"></p>
+	<button onclick="conteo()">Boton</button>
+</body>
+
+	<script type="text/javascript">
+		function conteo () {
+			var contador=50;
+			var texto="";
+
+			do{
+				texto+=contador+"<br>";
+				contador++;
+				}
+				while (contador<=100) {
+					document.getElementById("salida").innerHTML=texto;
+				
+			}
+		}
+	</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POB</title>
+</head>
+<body>
+	<h3>Programación orientada a objetos</h3>
+
+	<p id="saludo1"></p>
+	<p id="saludo2"></p>
+	<button onclick="mifuncion1()">Saludo 1</button>
+	<button onclick="mifuncion2()">Saludo 2</button>
+
+</body>
+
+	<script type="text/javascript">
+		
+		function Persona (nombre, edad, ciudad, email) {//Definicion de la clase persona
+
+			this.nombre=nombre;
+			this.edad=edad;
+			this.ciudad=ciudad;
+			this.emial=email;
+
+			this.saludar=function(){
+				document.getElementById("saludo1").innerHTML="Hola mundo, soy "+this.nombre+"y mi edad es "+this.edad;
+			};
+		}
+
+		var persona=new Persona("Marco García ", "24 ", "Cartagena", "info@dimarcogarcia.com"); //Creacion de un objeto de la clase persona
+
+		function mifuncion1(){
+			persona.saludar();
+		}
+
+		function mifuncion2(){
+			//Acceso a los atributos ciudad e email del objeto "Persona"
+			document.getElementById("saludo2").innerHTML="Soy de"+ persona.ciudad+"y mi mail es"+persona.email;
+		}
+
+	</script>
+
+</html>

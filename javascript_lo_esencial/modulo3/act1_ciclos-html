@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act 1</title>
+</head>
+<body>
+	<p id="salida"></p>
+	<button onclick="persona()">Ejecutar</button>
+</body>
+
+	<script type="text/javascript">
+		
+
+			var texto="";
+
+		    var proveedor = {
+		        nit: "001",
+		        nombre: "RESMAS S.A",
+		        telefono: 697979
+		    };
+
+
+
+		    var x;
+
+		    for (x in proveedor) {
+
+
+		     texto+=proveedor[x]+"<br>";
+		    }
+
+
+
+		   document.getElementById("salida").innerHTML = texto;
+
+
+	</script>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Throw</title>
+</head>
+<body>
+
+	<h2>Throw</h2>
+	<button onclick="fun1()">Ejecutar</button>
+	<button onclick="fun2()">Ejecutar 2</button>
+
+</body>
+
+<script type="text/javascript">
+	
+	function fun1 () {
+		try {
+			var mensaje="Esto es un mensaje";
+			if (isNaN(parseInt(mensaje)));{ 
+				throw "Parametro es NaN";
+				}
+			}
+		 catch(error) {
+alert("Existe un error"+"-"+error.message);
+		}
+		
+	}
+
+
+	function fun2(){
+		try {
+			var res=45/0;
+
+			if (res==Infinity) {
+				throw "Division entre cero no es válida";
+			}
+		} catch(error) {
+			alert("Existe un error"+"-"+error.message);
+		}
+	}
+</script>
+</html>

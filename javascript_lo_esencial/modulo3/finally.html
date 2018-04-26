@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finally</title>
+</head>
+<body>
+	<h1>Finally</h1>
+	<p id="mensaje"></p>
+	<button onclick="mifuncion()">Ejecutar</button>
+
+
+</body>
+
+	<script type="text/javascript">
+		function mifuncion () {
+
+			try {
+				
+				var edad=60;
+				calcular(edad);
+
+			} catch(error) {
+				alert("Existe un error"+" - "+error.message);
+			}
+			finally{
+				document.getElementById("mensaje").innerHTML="Continuamos";
+			}
+			
+			}
+	</script>
+
+</html>

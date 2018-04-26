@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act 3</title>
+</head>
+<body>
+	<p id="equipos"></p>
+	<button onclick="ame()">Odiame más</button>
+</body>
+	<script type="text/javascript">
+		
+		function ame () {
+			
+		var contador =0;
+		var texto="";
+		var equipos=["América", "Chivas", "León", "Santos"];
+
+		do{
+			texto+=equipos[contador]+"<br>";
+			contador ++;}
+		while (contador<=equipos.length) 
+			document.getElementById("equipos").innerHTML=texto;
+		
+		}
+
+	</script>
+</html>

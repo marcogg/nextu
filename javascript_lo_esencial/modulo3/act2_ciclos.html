@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act 2</title>
+</head>
+<body>
+
+	<p id="num"></p>
+	<button onclick="lista()">Mostrar</button>
+
+</body>
+
+<script type="text/javascript">
+	
+	function lista () {
+		
+
+		var texto="";
+		var base=1;
+
+		while (base<=100) {
+			if (base %2 !=0) {
+				texto+=base+"<br>";
+			}
+			base++;
+		}
+
+
+
+	document.getElementById("num").innerHTML=texto;
+	}
+
+</script>
+
+</html>
