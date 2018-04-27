@@ -1,1 +1,40 @@
-act2_poo.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act 2 POO</title>
+</head>
+<body>
+
+	<h1>Act 2</h1>
+	<p id="ver"></p>
+	<button onclick="mifuncion()">Mostrar promedio</button>
+
+</body>
+
+<script type="text/javascript">
+
+	function Estudiante (codigo, nombre, nota1, nota2) {
+		this.codigo=codigo;
+		this.nombre=nombre;
+		this.nota1=nota1;
+		this.nota2=nota2;
+		this.promedio=function(){
+
+			var promedio=(nota1+nota2)/2;
+
+			document.getElementById("ver").innerHTML=this.nombre+" - "+promedio;
+		}
+	};
+
+		var estudiante = new Estudiante ("00031010", "Marco García", 92, 81);
+
+		function mifuncion(){
+			estudiante.promedio();
+		}
+	
+	
+
+
+</script>
+
+</html>
