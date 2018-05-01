@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi primer JSON</title>
+</head>
+<body>
+	<p id="empresas"></p>
+</body>
+
+	<script type="text/javascript">
+		
+		var jsonText='{"empresas":['+
+		'["nit":"3432-1","nombre":"TCC", "telefono":"3324993","email":"tcc@hotmial.com"},'+
+		'["nit":"5567-1","nombre":"Movistar", "telefono":"3555566","email":"Movistar@hotmial.com"},'+
+		'["nit":"89546-2","nombre":"Nokia", "telefono":"55303885","email":"exito@hotmial.com",}'+
+		'["nit":"89546-2","nombre":"Puma", "telefono":"1861561","email":"mana@hotmial.com"},'+
+		'["nit":"89546-2","nombre":"Mana", "telefono":"89856513","email":"cd@hotmial.com"},'+
+		'["nit":"89546-2","nombre":"Colgate", "telefono":"5262600","email":"Bambi@hotmial.com"},'+
+		'["nit":"89546-2","nombre":"Vendor", "telefono":"1598787487","email":"hi@hotmial.com"},'+
+		'["nit":"89546-2","nombre":"Samsung", "telefono":"3369716","email":"a8plus@hotmial.com"}'+ ']}';
+
+		var jsObj = JSON.parse(jsonText);
+
+		function leerJSON (json) {
+			var out="----------------EMPRESAS--------------------<br>";
+			var i;
+			for(i=0; i<json.empresas.lenght; i++){
+				out+="Nit:"+json.empresas[i].nit+"-"+"Nombre:"+json.empresas[i].nombre+"-"+"Telefono"+json.empresas[i].telefono+"-"+"Email: "+json.empresas[i].email+"<br>";
+			}
+		document.getElementById("empresas").innerHTML=out;
+		}
+		leerJSON(jsObj);
+		
+	</script>
+
+</html>
