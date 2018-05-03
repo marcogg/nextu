@@ -7,8 +7,15 @@
 <body>
 
 	<h1>Estudiantes</h1>
-	<p id="listado"></p>
 	<button onclick="mostrar_estudiantes()">Mostrar estudiantes</button>
+	<button onclick="calcular_promedio()">Calcular Promedio</button>
+	<button onclick="estudiante_masalto()">Ver más alto</button>
+	<button onclick="estudiante_masbajo()">Ver más alto</button>
+
+	<p id="listado"></p>
+	<p id="promedio"></p>
+	<p id="mayor"></p>
+	<p id="menor"></p>
 </body>
 
 	<script type="text/javascript">
@@ -68,10 +75,59 @@
 			 document.getElementById("listado").innerHTML=txt;
 		}
 
+
+		function calculo(json){
+
+			var out = "-----PROMEDIO-----<br>";
+    		var aux = 0.0;
+    		for (i = 0; i < json.length; i++) {
+        	aux += json[i].nota;
+        	var prom=aux/10;
+    		}
+    		
+    		document.getElementById("promedio").innerHTML=out+="El promedio general es: "+ prom;
+    	}
+			
+
+		function mejor(json){
+			var out = "---Mejor estudiante---<br>";
+            var mejor = json[0].nota;
+            var pos = 0;
+            var aux = "";
+            for (i = 0; i < json.length; i++) {
+
+            	 if (Math.max(json[i].nota)) {
+                    
+                    aux=aux+"Nombre: "+json[i].nombre+" - "+"Nota: "+json[i].nota+"<br>";
+                }
+			}
+
+			document.getElementById("mayor").innerHTML=out+aux;
+		}
+
+
+
 		//FUNCION LECTURA LISTADO
 
 		function mostrar_estudiantes(){
 			leerJSON(estudiantes);
+		}
+
+		//FUNCION VER PROMEDIO
+
+		function calcular_promedio(){
+			calculo(estudiantes);
+		}
+
+		//FUNCION VER MÁS ALTO
+		function estudiante_masalto(){
+			mejor(estudiantes);
+		}
+
+
+		//FUNCION VER MÁS BAJO
+		function estudiante_masbajo(){
+			peor(estudiantes);
 		}
 
 
