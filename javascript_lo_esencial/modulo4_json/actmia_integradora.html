@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Integracion</title>
+</head>
+<body>
+
+	<p>Poner un JSON aqui abajo si el input es mayor de 5</p>
+	ingresa numero<input type="text" name="" onchange="evaluar()">
+	<p id="datos"></p>
+	<p>Hacer recuadro que tape el JSON</p>
+<button onclick="leer()">Ver JSON</button>
+
+</body>
+
+	<script type="text/javascript">
+		var miJSON=[
+		{
+			"dato":1,
+			"valor":"camisa"
+		},{
+			"dato":4,
+			"valor":"ropero"
+		},{
+			"dato":9,
+			"valor":"gorra"
+		},{
+			"dato":15,
+			"valor":"zapatos"
+		}
+		];
+
+		function leerJSON (json) {
+			var out="";
+			var i;
+			for (i=0; i<miJSON.lenght; i++){
+				document.getElementById("datos").innerHTML=out+=miJSON[i].dato;
+			}
+		}
+
+		function evaluar(){
+			var test=leerJSON.value;
+			if (test>=5) {
+				alert("Lo logre!!");
+			}else {
+				alert("oooh");
+			}
+		}
+
+		function leer(json){
+			evaluar(miJSON);
+		}
+		
+
+	</script>
+
+</html>

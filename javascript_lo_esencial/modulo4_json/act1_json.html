@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act 1 JSON</title>
+</head>
+<body>
+	<h1>ACT JSON</h1>
+	<p id="lista"></p>
+</body>
+
+	<script type="text/javascript">
+		
+		var estudiantes=[
+		
+			{
+			"codigo":"001", "nombre":"Marco"
+			},{
+			"codigo":"002", "nombre":"Antonio"
+			},{
+			"codigo":"003", "nombre":"Ivan"
+			}
+		];
+
+
+
+		function leerJSON (json){
+			var out="";
+			var i;
+			for (i = 0; i<json.length; i++) {
+				alert("Codigo"+json[i].codigo+"-"+"Nombre"+json[i].nombre);
+			}
+		}
+
+		leerJSON(estudiantes);
+
+	</script>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Evaluacion Marco Antonio García González</title>
+</head>
+<body>
+
+	<h1>Estudiantes</h1>
+	<p id="listado"></p>
+	<button onclick="mostrar_estudiantes()">Mostrar estudiantes</button>
+</body>
+
+	<script type="text/javascript">
+		
+		var estudiantes=[{
+			"codigo":"001",
+			"nombre":"Marco",
+			"nota": 90
+		},{
+			"codigo":"002",
+			"nombre":"Antonio",
+			"nota":70
+		},{
+			"codigo":"003",
+			"nombre":"Rubén",
+			"nota":92
+		},{
+			"codigo":"004",
+			"nombre":"Mario",
+			"nota":83
+		},{
+			"codigo":"005",
+			"nombre":"Mariana",
+			"nota":96
+		},{
+			"codigo":"006",
+			"nombre":"Gloria",
+			"nota":98
+		},{
+			"codigo":"007",
+			"nombre":"Pedro",
+			"nota":66
+		},{
+			"codigo":"008",
+			"nombre":"Agustín",
+			"nota":73
+		},{
+			"codigo":"009",
+			"nombre":"Ana María",
+			"nota":81
+		},{
+			"codigo":"010",
+			"nombre":"Jimena",
+			"nota":78
+		}
+		];
+
+		//FUNCION MOSTRAR
+
+		function leerJSON(json){
+			var txt="-----ESTUDIANTES-------"
+			var i;
+			for (i=0; i<json.length; i++) {
+			 	txt+="<br><br>"+"Código: "+json[i].codigo + " Nombre: " + json[i].nombre+" Nota: "+json[i].nota+"<br>";
+			 }
+
+			 document.getElementById("listado").innerHTML=txt;
+		}
+
+		//FUNCION LECTURA LISTADO
+
+		function mostrar_estudiantes(){
+			leerJSON(estudiantes);
+		}
+
+
+
+	</script>
+
+</html>

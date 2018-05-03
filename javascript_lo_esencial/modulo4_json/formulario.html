@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<meta charset="utf-8">
+</head>
+<body onload="evento_onload()">
+
+	<hi>Formulario</hi>
+	<table>
+		<form id="formulario">
+			<tr>
+				<td><label>Nombres:</label></td>
+				<td><input type="text" name="nombres" id="nombres" onfocus="evento_onfocus(this)" onblur="evento_onblur(this)"></td>
+			</tr>
+			<tr>
+				<td><label>Apellidos</label></td>
+				<td><input type="text" name="apellidos" id="apellidos"></td>
+			</tr>
+			<tr>
+				<td><label>ID</label></td>
+				<td><input type="text" name="identificacion" id="identificacion"></td>
+			</tr>
+			<tr>
+				<td><label>Sexo</label></td>
+				<td><select name="sexo" id="sexo">
+						<option name="" value=""></option>
+						<option name="masculino" value="masculino">Masculino</option>
+						<option name="femenino" value="femenino">Femenino</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Email</label></td>
+				<td><input type="text" name="email" id="email"></td>
+			</tr>
+			<tr>
+				<td><label>Telefono</label></td>
+				<td><input type="text" name="telefono" id="telefono"></td>
+			</tr>
+			<tr>
+				<td><label>Dirección</label></td>
+				<td><input type="text" name="direccion" id="direccion"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="enviar" id="enviar" value="enviar" onclick="evento_onclick()"></td>
+			</tr>
+			
+		</form>
+	</table>
+</body>
+
+<!--CODIGO JAVASCRIPT-->
+<script type="text/javascript">
+	
+	function evento_onload () {
+		alert("Bienvenidos");
+	}
+
+	function evento_onclick(){
+		alert("Datos enviados");
+	}
+
+	function evento_onfocus(elemento){
+		elemento.style.background = "#CCCCCC";
+	}
+
+	function evento_onblur(elemento){
+		elemento.style.background = "#FFFFFF";
+	}
+</script>
+
+</html>
