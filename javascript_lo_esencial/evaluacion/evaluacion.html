@@ -90,17 +90,20 @@
 			
 
 		function mejor(json){
-			var out = "---Mejor estudiante---<br>";
-            var max = "";
-            var mayor=json[0].length;
-            var pos=0;
-            var i;
-            for (i = 0; i < json.length; i++) {
-            	var top= Math.max(json[i].nota);
-
+			var out = "---Mejor nota de los estudiantes---<br>";
+            var max=json[0].nota;
+            
+            for (i=0; i < json.length; i++) {
+            	if (max < json[i].nota) {
+            		max=json[i].nota;
             	}
-   
-			document.getElementById("mayor").innerHTML=top;
+
+            }
+            for (i=0; ) {
+            	[i]
+            }
+            
+			document.getElementById("mayor").innerHTML=out+"La mejor nota la obtuvo"+" - "+max;
 		}
 
 
