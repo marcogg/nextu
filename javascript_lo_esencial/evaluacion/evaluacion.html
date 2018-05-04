@@ -91,18 +91,16 @@
 
 		function mejor(json){
 			var out = "---Mejor estudiante---<br>";
-            var mejor = json[0].nota;
-            var pos = 0;
-            var aux = "";
+            var max = "";
+            var mayor=json[0].length;
+            var pos=0;
+            var i;
             for (i = 0; i < json.length; i++) {
+            	var top= Math.max(json[i].nota);
 
-            	 if (Math.max(json[i].nota)) {
-                    
-                    aux=aux+"Nombre: "+json[i].nombre+" - "+"Nota: "+json[i].nota+"<br>";
-                }
-			}
-
-			document.getElementById("mayor").innerHTML=out+aux;
+            	}
+   
+			document.getElementById("mayor").innerHTML=top;
 		}
 
 
