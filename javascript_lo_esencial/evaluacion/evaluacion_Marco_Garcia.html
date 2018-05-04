@@ -10,12 +10,11 @@
 	<button onclick="mostrar_estudiantes()">Mostrar estudiantes</button>
 	<button onclick="calcular_promedio()">Calcular Promedio</button>
 	<button onclick="estudiante_masalto()">Ver más alto</button>
-	<button onclick="estudiante_masbajo()">Ver más alto</button>
+	<button onclick="estudiante_masbajo()">Ver más bajo</button>
 
 	<p id="listado"></p>
 	<p id="promedio"></p>
-	<p id="mayor"></p>
-	<p id="menor"></p>
+	<p id="nota"></p>
 </body>
 
 	<script type="text/javascript">
@@ -91,19 +90,32 @@
 
 		function mejor(json){
 			var out = "---Mejor nota de los estudiantes---<br>";
-            var max=json[0].nota;
+            var dato=json[0].nota;
             
             for (i=0; i < json.length; i++) {
-            	if (max < json[i].nota) {
-            		max=json[i].nota;
+            	if (dato < json[i].nota) {
+            		dato=json[i].nota;
             	}
 
-            }
-            for (i=0; ) {
-            	[i]
-            }
+            }      
             
-			document.getElementById("mayor").innerHTML=out+"La mejor nota la obtuvo"+" - "+max;
+			document.getElementById("nota").innerHTML=out+"La mejor nota fue"+" - "+dato;
+		}
+
+
+
+		function peor(json){
+			var out = "---Mejor nota de los estudiantes---<br>";
+            var dato=json[0].nota;
+            
+            for (i=0; i < json.length; i++) {
+            	if (dato > json[i].nota) {
+            		dato=json[i].nota;
+            	}
+
+            }      
+            
+			document.getElementById("nota").innerHTML=out+"La nota más baja fue"+" - "+dato;
 		}
 
 
