@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elementos DOM</title>
+</head>
+<body>
+	<p name="label">Nombre: </p>
+	<input type="text" name="nombre"><br>
+	<p name="label">Apellido: </p>
+	<input type="text" name="nombre"><br>
+	<p name="label">Mail: </p>
+	<input type="text" name="nombre"><br>
+
+</body>
+
+	<script type="text/javascript">
+		var conteo=document.getElementsByTagName("p");
+		var conteo2=document.getElementsByTagName("input");
+
+		var res1=conteo.lenght;
+		var res2=conteo2.length;
+
+		alert(res1);
+		alert(res2);
+	</script>
+
+</html>

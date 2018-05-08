@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act 4</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<td>Producto</td>
+				<td>Precio</td>
+				<td>Cantidad</td>
+				<td>Subtotal</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Camisa</td>
+				<td><input type="text" name="precio" value="30000" readonly></td>
+				<td><input type="text" name="cantidad"></td>
+				<td><input type="text" name="subtotal"></td>
+			</tr>
+			<tr>
+				<td>Gorra</td>
+				<td><input type="text" name="precio" value="50000" readonly></td>
+				<td><input type="text" name="cantidad"></td>
+				<td><input type="text" name="subtotal"></td>
+			</tr>
+			<tr>
+				<td>Zapatos</td>
+				<td><input type="text" name="precio" value="6000" readonly></td>
+				<td><input type="text" name="cantidad"></td>
+				<td><input type="text" name="subtotal"></td>
+			</tr>
+			<tr>
+				<td>Pantalón</td>
+				<td><input type="text" name="precio" value="8000" readonly></td>
+				<td><input type="text" name="cantidad"></td>
+				<td><input type="text" name="subtotal"></td>
+			</tr>
+		</tbody>
+	</table>
+	<p>El total de su cumpra es:</p><p id="total"></p> 
+	<button onclick="calcular_subtotal()">Subtotal</button>
+	<button onclick="calcular_total()">Total</button>
+</body>
+
+	<script type="text/javascript">
+		var precio=document.getElementsByName("precio");
+		var cantidad=document.getElementsByName("cantidad");
+
+		function calcular_subtotal(){
+			var subtotal=precio*cantidad;
+			document.getElementById("subtotal").innerHTML=subtotal;
+		}
+
+		function calcular_total(){
+			var total=subtotal+=subtotal;
+			document.getElementById("total").innerHTML=total;
+		}
+
+
+
+
+	</script>
+
+
+</html>
