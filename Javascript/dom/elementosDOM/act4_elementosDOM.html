@@ -16,27 +16,27 @@
 		<tbody>
 			<tr>
 				<td>Camisa</td>
-				<td><input type="text" name="precio" value="30000" readonly></td>
-				<td><input type="text" name="cantidad"></td>
-				<td><input type="text" name="subtotal"></td>
+				<td><input type="text" id="precio1" value="30000" readonly></td>
+				<td><input type="text" id="cantidad1"></td>
+				<td><input type="text" id="subtotal1" readonly></td>
 			</tr>
 			<tr>
 				<td>Gorra</td>
-				<td><input type="text" name="precio" value="50000" readonly></td>
-				<td><input type="text" name="cantidad"></td>
-				<td><input type="text" name="subtotal"></td>
+				<td><input type="text" id="precio2" value="50000" readonly></td>
+				<td><input type="text" id="cantidad2"></td>
+				<td><input type="text" id="subtotal2" readonly></td>
 			</tr>
 			<tr>
 				<td>Zapatos</td>
-				<td><input type="text" name="precio" value="6000" readonly></td>
-				<td><input type="text" name="cantidad"></td>
-				<td><input type="text" name="subtotal"></td>
+				<td><input type="text" id="precio3" value="6000" readonly></td>
+				<td><input type="text" id="cantidad3"></td>
+				<td><input type="text" id="subtotal3" readonly></td>
 			</tr>
 			<tr>
 				<td>Pantalón</td>
-				<td><input type="text" name="precio" value="8000" readonly></td>
-				<td><input type="text" name="cantidad"></td>
-				<td><input type="text" name="subtotal"></td>
+				<td><input type="text" id="precio4" value="8000" readonly></td>
+				<td><input type="text" id="cantidad4"></td>
+				<td><input type="text" id="subtotal4" readonly></td>
 			</tr>
 		</tbody>
 	</table>
@@ -46,20 +46,47 @@
 </body>
 
 	<script type="text/javascript">
-		var precio=document.getElementsByName("precio");
-		var cantidad=document.getElementsByName("cantidad");
+
 
 		function calcular_subtotal(){
-			var subtotal=precio*cantidad;
-			document.getElementById("subtotal").innerHTML=subtotal;
+
+		//GRUPO 1
+		var precio1=parseInt( document.getElementById("precio1").value);
+		var cantidad1=parseInt( document.getElementById("cantidad1").value);
+		var subtotal1=precio1*cantidad1;
+		document.getElementById("subtotal1").value=subtotal1;
+
+
+		//GRUPO 2
+		var precio2=parseInt( document.getElementById("precio2").value);
+		var cantidad2=parseInt( document.getElementById("cantidad2").value);
+		var subtotal2=precio2*cantidad2;
+		document.getElementById("subtotal2").value=subtotal2;
+
+		//GRUPO 3
+		var precio3=parseInt( document.getElementById("precio3").value);
+		var cantidad3=parseInt( document.getElementById("cantidad3").value);
+		var subtotal3=precio3*cantidad3;
+		document.getElementById("subtotal3").value=subtotal3;
+
+		//GRUPO 4
+		var precio4=parseInt( document.getElementById("precio4").value);
+		var cantidad4=parseInt( document.getElementById("cantidad4").value);
+		var subtotal4=precio4*cantidad4;
+		document.getElementById("subtotal4").value=subtotal4;
 		}
+			
+		//SUMA TOTAL
 
 		function calcular_total(){
-			var total=subtotal+=subtotal;
-			document.getElementById("total").innerHTML=total;
+			var subtotal1 = parseInt(document.getElementById('subtotal1').value);
+			var subtotal2 = parseInt(document.getElementById('subtotal2').value);
+			var subtotal3 = parseInt(document.getElementById('subtotal3').value);
+			var subtotal4 = parseInt(document.getElementById('subtotal4').value);
+			var total = subtotal1+subtotal2+subtotal3+subtotal4;
+		document.getElementById('total').value=total;
+
 		}
-
-
 
 
 	</script>
