@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class name</title>
+	<script type="text/javascript">
+		function cambiarSpans(){
+			var spans=document.getElementsByClassName("spans");
+			for (var i = 0; i < spans.length; i++) {
+				spans[i].style.fontFamily="Verdana";
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<span class="spans">Mi span 1</span>
+	<span class="spans">Mi span 2</span>
+	<span class="spans">Mi span 3</span>
+
+	<button onclick="cambiarSpans()">Cambiar</button>
+
+</body>
+</html>

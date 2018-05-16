@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act 1</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1 id="titulo">Registro de estudiantes</h1>
+	<form>
+		<label>Nombres</label><input type="text" name="nombre"><br>
+		<label>Apellido</label><input type="text" name="nombre"><br>
+		<label>Edad</label><input type="text" name="nombre"><br>
+		<label>Fecha nacimiento</label><input type="date" name="nombre"><br>
+		<label>Lugar nacimiento</label><input type="text" name="nombre"><br>
+		<label>Estado Civil</label><input type="text" name="nombre">
+	</form>
+	<button onclick="registrarAlumno()">Registrar Alumno</button>
+	<button onclick="cambiarTitulo()">Cambiar Título</button>
+	<button onclick="cambiarColor()">Cambiar color</button>
+
+</body>
+
+<script type="text/javascript">
+	
+	function registrarAlumno(){
+		var crear=document.createElement("h3");
+		var insertar=document.createTextNode("Registro cool");
+		crear.appendChild(insertar);
+		document.body.appendChild(crear);
+	}
+
+	function cambiarTitulo(){
+		var titulo=document.getElementById("titulo");
+		titulo.innerHTML="Registro profesores";
+	}
+
+	function cambiarColor(){
+		var get=document.getElementsByTagName("input");
+		for(var i=0; i<get.length; i++){
+			get[i].style.color = 'red';
+		}
+
+
+	}
+
+</script>
+
+</html>

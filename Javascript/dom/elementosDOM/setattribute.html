@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>StAttribute</title>
+</head>
+<script type="text/javascript">
+	function cambiar_atributo(){
+		var cajatexto=document.getElementById("texto");
+		cajatexto.setAttribute("size", "60");
+	}
+</script>
+<body>
+
+	nombre:
+	<input type="text" id="texto" size="20">
+	<button onclick="cambiar_atributo()">Cambiar tamaño</button>
+
+</body>
+</html>

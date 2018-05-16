@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script type="text/javascript">
+	//SOLO FUNCIONA EN SAFARI
+	function cookie () {
+		var miDiv=document.getElementById("miDiv");
+		document.cookie="clave=1234" //Se crea una cookie
+
+		miDiv.innerHTML="Cookies: "+document.cookie; //Se muestra la cookie en el DIV
+
+	}
+</script>
+</head>
+<body>
+
+	<div id="miDiv"></div>
+	<button onclick="cookie()">Mostrar cookie</button>
+
+</body>
+</html>

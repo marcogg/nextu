@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tagName</title>
+	<script type="text/javascript">
+		function cambiarDivs(){
+			var divs=document.getElementsByTagName("div");
+			for(var i=0; i<divs.length; i++){
+				divs[i].style.color="orange";
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<div>
+		Midiv1
+	</div>
+	<div>
+		Midiv2
+	</div>
+	<div>
+		Midiv3
+	</div>
+<button onclick="cambiarDivs()">Cambiar color a divs</button>
+</body>
+</html>

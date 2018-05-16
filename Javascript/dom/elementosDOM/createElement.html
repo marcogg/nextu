@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	function crearEncabezado () {
+		var encabezado=document.createElement("h1");
+		var texto=document.createTextNode("Mi nuevo encabezado");
+		encabezado.appendChild(texto);
+
+		document.body.appendChild(encabezado);
+
+	}
+</script>
+
+
+</head>
+<body>
+
+	<button onclick="crearEncabezado()">Crear</button>
+
+</body>
+</html>
