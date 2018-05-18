@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act 4</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	
+	<input type="text" name="" id="miInput">
+	<div id="miDiv">MI DIV!!</div>
+	<p id="miParrafo">Penso luego existo</p>
+	
+	<button onclick="input()">Cambiar input</button>
+	<button onclick="div()">Cambiar div</button>
+	<button onclick="parrafo()">Cambiar párrafp</button>
+</body>
+
+	<script type="text/javascript">
+		function input(){
+			var get=document.getElementById("miInput");
+			get.style.backgroundColor='blue';
+			get.style.width = '200px';
+			get.style.height = '80px';
+			get.style.color='yellow';
+
+		}
+
+		function div(){
+			var get=document.getElementById("miDiv");
+			get.style.backgroundColor='orange';
+			get.style.width = '800px';
+			get.style.height = '800px';
+			get.style.color='white';
+		}
+
+		function parrafo(){
+			var get=document.getElementById("miParrafo");
+			get.style.backgroundColor='green';
+			get.style.fontSize='x-large';
+			get.style.color='red';
+		}
+
+
+	</script>
+
+</html>

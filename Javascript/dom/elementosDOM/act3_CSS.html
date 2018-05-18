@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jugadores</title>
+</head>
+<body>
+	<table border="1">
+		<thead id="encabezado">
+			<tr>
+				<td>Jugadores</td>
+				<td>Goles</td>
+			</tr>
+		</thead>
+			<tbody id="jugadores">
+				<tr>
+					<td>James Rodriguez</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>Thomas Muller</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>Neymar</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>Messi</td>
+					<td>4</td>
+				</tr>
+			</tbody>	
+	</table>
+	<button onclick="cambiar()">Cambiar CSS</button>
+</body>
+
+	<script type="text/javascript">
+
+		function cambiar () {	
+		var get=document.getElementById("encabezado");
+		get.style.backgroundColor='red';
+
+
+		var getd=document.getElementById("jugadores");
+		getd.style.backgroundColor = 'blue';
+		getd.style.fontStyle='italic';
+		getd.style.fontWeight = 'bold';
+
+		}
+		
+	</script>
+
+</html>
