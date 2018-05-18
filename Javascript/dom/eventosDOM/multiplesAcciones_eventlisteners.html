@@ -1,1 +1,25 @@
-multiplesAcciones_eventlisteners.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<button id="boton1">Mostrar Alerta</button>
+
+	<script type="text/javascript">
+		var elemento=document.getElementById("boton1");
+		elemento.addEventListener("click", mostrarMensaje1);
+		elemento.addEventListener("click", mostrarMensaje2);
+
+		function mostrarMensaje1 () {
+			alert("1");
+		}
+
+		function mostrarMensaje2 () {
+			alert("2");
+		}
+	</script>
+
+</body>
+</html>
