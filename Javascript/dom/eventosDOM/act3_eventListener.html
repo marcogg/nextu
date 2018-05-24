@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" id="miInput">
+</body>
+
+<script type="text/javascript">
+
+	var get=document.getElementById("miInput");
+	get.addEventListener("click", tamano);
+
+	function tamano(){
+		get.style.width = '150px';
+		get.style.height = '50px';
+	}
+
+	get.addEventListener("blur",color);
+
+	function color(){
+		get.style.color="orange";
+		get.style.backgroundColor="blue";
+	}
+
+
+
+</script>
+
+</html>
