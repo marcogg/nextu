@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<p>Mi parrafo 1</p>
+	<p>Mi parrafo 2</p>
+	<p>Mi parrafo 3</p>
+	<p>Mi parrafo 4</p>
+
+	<button onclick="colorNaranja()">Cambiar Color</button>
+	<button onclick="cambiarParrafo()">Cambiar parrafo</button>
+
+
+
+	<script type="text/javascript">
+		function colorNaranja () {
+			var p1=document.getElementsByTagName("p")[0];
+			var p4=document.getElementsByTagName("p")[3];
+
+			p1.style.color = 'orange';
+			p4.style.color = 'red';
+
+		}
+
+		function cambiarParrafo () {
+			document.getElementsByTagName("p")[2].innerHTML="Parrafo modificado";
+		}
+
+
+	</script>
+
+</body>
+</html>

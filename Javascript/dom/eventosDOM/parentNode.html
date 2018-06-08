@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parent node</title>
+	<script type="text/javascript">
+		function nodoPadre () {
+			var encabezado=document.getElementsByTagName("h1")[0]; //Obtenemos el primer elemento h1 a traves del metodo get elements by tag name
+
+			document.getElementById("mensaje").innerHTML=encabezado.parentNode.nodeName; //Obtenemos el nombre del nodo padre o elemento padre del elemento encabezado obtenido  y lo mostramos en el id
+		}
+	</script>
+</head>
+<body>
+
+	<div id="miDiv">
+		<h1>Encabezado1</h1>
+		<h1>Encabezado2</h1>
+		<h1>Encabezado3</h1>
+	</div>
+
+	<p id="mensaje"></p>
+
+	<button onclick="nodoPadre()">Ver padre</button>
+
+</body>
+</html>

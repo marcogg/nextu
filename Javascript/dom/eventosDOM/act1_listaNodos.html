@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Holi</p>
+	<p>Como estas</p>
+	<p>Aqui practicando</p>
+	<p>Javascript</p>
+
+	<button onclick="cambiarColor()">Cambiar Color</button>
+	
+
+
+	<script type="text/javascript">
+		
+	function cambiarColor () {
+		var listaTags=document.getElementsByTagName("p");
+		for(var i=0; i<listaTags.length; i++){
+			listaTags[i].style.color = 'orange';
+		}
+	}
+
+
+	</script>
+
+</body>
+
+
+
+</html>

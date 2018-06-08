@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p id="parrafo">
+			<a id="e1" href="">Primer enlace</a>
+			<br>
+			<a id="e2" href="">Segundo enlace</a>
+	<script type="text/javascript">
+		var nodo_hijo=document.getElementById("e1");
+		nodo_hijo.parentNode.removeChild(nodo_hijo); //Llamamos desd el nodo hijo al padre para eliminar al mismo nodo hijo
+	</script>
+</body>
+</html>

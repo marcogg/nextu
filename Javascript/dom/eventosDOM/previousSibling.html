@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Previus Sibling</title>
+	<script type="text/javascript">
+		function nodeHermanoAnterior(){
+			var texto="";
+			var parrafo=document.getElementById("p1");
+			var mensaje=document.getElementById("mensaje");
+			mensaje.innerHTML="Anterior nodo hermano del elemento parrafo: "+parrafo.previousSibling.nodeName; //Se usa la propiedad de previous sibling del elemento parrafo con id o1 para obtener el anterior nodo hermano con su respectivo nombre para mostrarlo en el elemento p con id mensaje
+		}
+	</script>
+</head>
+<body>
+
+	<div id="miDIv"><h1>Encabezado 1</h1><p id="p1">Parrafo1</p><input type="text"></div>
+	<br>
+	<button onclick="nodeHermanoAnterior()">Anterior Nodo Hermano</button>
+	<p id="mensaje"></p>
+
+</body>
+</html>
