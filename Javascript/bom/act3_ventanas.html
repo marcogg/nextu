@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act 3 Ventanas</title>
+</head>
+<body>
+	<button onclick="abrirVentana()">Abrir ventana</button>
+	<button onclick="cambiarDimVentana()">Cambiar Dimension</button>
+
+	<script type="text/javascript">
+		
+		var ventana1;
+
+		function abrirVentana () {
+			ventana1=window.open("", "_blank", "width=300, height=300");
+			ventana1.focus();
+		}
+
+		function cambiarDimVentana () {
+			ventana1.resizeTo(600,600);
+			ventana1.focus()
+		}
+	</script>
+
+</body>
+</html>

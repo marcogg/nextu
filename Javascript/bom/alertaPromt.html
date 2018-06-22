@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body onload="alerta3()">
+	<h1>Cuadro prompt</h1>
+	<p id="mensaje"></p>
+
+	<script type="text/javascript">
+		function alerta3 () {
+			var edad=prompt("Digite su edad");
+			if(edad>=18){
+				document.getElementById("mensaje").innerHTML="Usted tiene "+edad +" años. Es mayor de edad";
+			}
+			else {
+				document.getElementById("mensaje").innerHTML="Usted tiene "+edad+" años. Es menor de edad";
+			}
+		}
+	</script>
+</body>
+</html>
