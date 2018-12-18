@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="navegador()">
+
+	<h1>Navegador del Bom</h1>
+	
+	<p id="mensaje">
+
+	<script type="text/javascript">
+		function navegador () {
+			document.getElementById("mensaje").innerHTML=
+			"Nombre " + navigator.appName+"<br>"+
+			"Version " + navigator.appVersion+"<br>"+
+			"Lenguaje " + navigator.language+"<br>"+
+			"Navegador en linea " + navigator.onLine+"<br>"+
+			"Java está habilitado " + navigator.javaEnabled();
+
+		}
+	</script>
+
+</body>
+</html>

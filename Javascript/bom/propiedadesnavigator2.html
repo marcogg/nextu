@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h2>Navegador de BOM</h2>
+	<button onclick="mostrarPropiedades()">Mostrar Propiedades</button>
+	<p id="mensaje"></p>
+	
+
+
+</body>
+
+	<script type="text/javascript">
+	
+	function mostrarPropiedades() {
+		var mensaje="";
+
+		mensaje+="<b>Cookies Habilitadas:</b>"+navigator.cookieEnabled+"<br>";
+		mensaje+="<b>Plataforma: </b>"+navigator.platform+"<br>";
+		mensaje+="<b> El nombre Motor del Navegador:</b>"+navigator.product+"<br>";
+		mensaje+="<b>Tipos MIME soportados:</b>"+"<br>";
+
+		for (var i=0; i<navigator.mimeTypes.lenght;i++){
+			mensaje+="-"+navigator.mimeTypes[i].type+"<br>";
+
+		}
+
+		mensaje+="<b>Plugins:</b>"+"<br>";
+
+		for (var j = 0; j < navigator.plugins.length; j++) {
+			mensaje+=navigator.plugins[j].name+"<br>";
+		}
+
+		document.getElementById("mensaje").innerHTML=mensaje;
+	}
+	
+
+	</script>
+
+
+</html>

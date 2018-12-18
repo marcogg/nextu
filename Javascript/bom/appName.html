@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="navegador()">
+	<h2>El nombre de tu navegador</h2>
+
+	<p id="nombre"></p>
+
+	<script type="text/javascript">
+		function navegador () {
+			document.getElementById("nombre").innerHTML= navigator.appName;
+		}
+	</script>
+</body>
+</html>
